@@ -1,0 +1,54 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add vue-json-viewer@2
+
+PATH: 
+  /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.13.2
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.npmjs.org/Faker: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:141550:19)
+      at listOnTimeout (node:internal/timers:557:17)
+      at processTimers (node:internal/timers:500:7)
+
+npm manifest: 
+  {
+    "name": "myblog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "docs:dev": "vuepress dev docs",
+      "docs:build": "vuepress build docs",
+      "fa:build": "node node_modules/vuepress-plugin-font-awesome/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@vssue/api-github-v3": "^1.4.7",
+      "@vssue/vuepress-plugin-vssue": "^1.4.8",
+      "vuepress": "^1.9.7",
+      "vuepress-theme-reco": "^1.6.11"
+    },
+    "dependencies": {
+      "Faker": "^0.7.2",
+      "mkcert": "^1.5.0",
+      "moment": "^2.29.2",
+      "vuepress-plugin-font-awesome": "^1.90.6"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
